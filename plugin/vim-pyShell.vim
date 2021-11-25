@@ -21,7 +21,7 @@ function! StopPyShell()
   call VimuxRunCommand("exit")
 endfunction
 
-function! PyShellEnterPateEnv()
+function! PyShellEnterPasteEnv()
   if !g:inPasteMode && !g:pysparkMode
     let g:inPasteMode = 1
     call VimuxRunCommand(":paste\r")
